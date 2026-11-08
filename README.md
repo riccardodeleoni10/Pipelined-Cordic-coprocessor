@@ -57,7 +57,7 @@ $$
 $$
 
 <p align="center">
-  <img src="img/cordic_vector_rotation.svg" alt="CORDIC Vector Rotation Graph" width="60%">
+  <img src="img/cordic.svg" alt="CORDIC Vector Rotation Graph" width="60%">
   <br>
   <em>Figure 1: Iterative decomposition of the target angle &theta; into elementary micro-rotations.</em>
 </p>
