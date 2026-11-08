@@ -216,7 +216,7 @@ All data buses (`z_in`, `x_out`, `y_out`, `z_out`) use 16-bit signed two's compl
 The testbench `tb_Cordic_pipelined.vhd` drives the core with a continuous angular sweep $\theta \in [-\pi, +\pi]$ over 10 full periods with a step size of $0.01\text{ rad}$ at a $100\text{ MHz}$ clock frequency ($\approx 63\text{ }\mu\text{s}$ total simulation time).
 
 <p align="center">
-  <img src="img/simulation_waveform.png" alt="RTL Simulation Waveform" width="100%">
+  <img src="images/cordic_sim.png" alt="RTL Simulation Waveform" width="100%">
   <br>
   <em>Figure 3: Behavioral simulation showing input angle and valid sine/cosine outputs after latency cycles.</em>
 </p>
