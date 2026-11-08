@@ -1,4 +1,4 @@
-# Pipelined CORDIC Core (Sine & Cosine Generator):wave:
+# Pipelined CORDIC Core (Sine & Cosine Generator) 🚀
 ![Language](https://img.shields.io/badge/Language-VHDL-blue.svg)
 ![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-red.svg)
 ![Target](https://img.shields.io/badge/Target-Zynq_UltraScale-success.svg)
