@@ -52,32 +52,32 @@ stim_proc: process
     variable z_clamped: real := 0.0;
     constant STEP_RAD : real := 0.01; 
 begin
-    rst_i <= '1';
-    wait for CLK_PERIOD * 5;
-    wait until rising_edge(clk_i);
-    rst_i <= '0';
+rst_i <= '1';
+wait for CLK_PERIOD * 5;
+wait until rising_edge(clk_i);
+rst_i <= '0';
 
-    for cycle in 1 to 10 loop
-        theta := -MATH_PI;
-        while theta <= MATH_PI loop
-            theta_in_real <= theta;
-            if theta > MATH_PI_OVER_2 then
-                z_clamped := MATH_PI_OVER_2;
-            elsif theta < -MATH_PI_OVER_2 then
-                z_clamped := -MATH_PI_OVER_2;
-            else
-                z_clamped := theta;
-            end if;
+for cycle in 1 to 10 loop
+    theta := -MATH_PI;
+    while theta <= MATH_PI loop
+        theta_in_real <= theta;
+        if theta > MATH_PI_OVER_2 then
+            z_clamped := MATH_PI_OVER_2;
+        elsif theta < -MATH_PI_OVER_2 then
+            z_clamped := -MATH_PI_OVER_2;
+        else
+            z_clamped := theta;
+        end if;
 
-            z_in <= std_logic_vector(to_signed(integer(round(z_clamped * SCALE)), 16));
+        z_in <= std_logic_vector(to_signed(integer(round(z_clamped * SCALE)), 16));
 
-            wait until rising_edge(clk_i);
-            theta := theta + STEP_RAD;
-        end loop;
+        wait until rising_edge(clk_i);
+        theta := theta + STEP_RAD;
     end loop;
+end loop;
 
-    wait for CLK_PERIOD * (STAGES + 10);
+wait for CLK_PERIOD * (STAGES + 10);
     std.env.stop;
-    end process;
+end process;
 
 end sim;
