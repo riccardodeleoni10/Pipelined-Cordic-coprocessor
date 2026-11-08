@@ -170,7 +170,7 @@ The design consists of two main VHDL modules:
 - **`Cordic_pipelined_top.vhd` (Top-Level):** Instantiates `STAGES` processing elements via a `for ... generate` loop, computes the `INV_K` ($1/K$) constant and the `lut_in_s` ($\arctan(2^{-i})$) array at synthesis time, and hardwires the initial stage inputs $x_0 = 1/K$, $y_0 = 0$.
 
 <p align="center">
-  <img src="img/cordic_pipeline_stage.svg" alt="CORDIC Pipeline Elementary Stage" width="80%">
+  <img src="images/pe_strucuture.svg" alt="CORDIC Pipeline Elementary Stage" width="80%">
   <br>
   <em>Figure 2: Hardware architecture of a single CORDIC pipeline stage.</em>
 </p>
