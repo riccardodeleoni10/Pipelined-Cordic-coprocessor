@@ -1,10 +1,10 @@
 # Pipelined CORDIC Core (Sine & Cosine Generator)
 
 ![Language](https://img.shields.io/badge/Language-VHDL-red.svg)
-![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-E05A47?style=for-the-badge&logo=xilinx)
-![Target](https://img.shields.io/badge/Target-Zynq_UltraScale%2B_ZCU208-D9232E?style=for-the-badge)
-![Frequency](https://img.shields.io/badge/Fmax-500_MHz-2EA44F?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Architecture-16--Stage_Pipelined-8A2BE2?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-success.svg)
+![Target](https://img.shields.io/badge/Target-Zynq_UltraScale-yellow.svg)
+![Frequency](https://img.shields.io/badge/Fmax-500_MHz-blue.svg)
+![Architecture](https://img.shields.io/badge/Architecture-16--Stage_Pipelined-purple.svg)
 
 Hardware implementation in VHDL of a **fully pipelined CORDIC (*COordinate Rotation DIgital Computer*) processor** operating in rotation mode for high-throughput sine and cosine computation.
 
