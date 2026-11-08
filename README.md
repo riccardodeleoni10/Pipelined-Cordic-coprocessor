@@ -38,8 +38,8 @@ Given a two-dimensional vector $[x_0, y_0]^T$ in the Cartesian plane, rotating i
 
 $$
 \begin{bmatrix} 
-    x' \\ 
-    y' 
+    x_{1} \\ 
+    y_{1} 
 \end{bmatrix} 
 = R(\theta) 
 \begin{bmatrix} 
