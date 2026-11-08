@@ -1,8 +1,8 @@
 # Pipelined CORDIC Core (Sine & Cosine Generator)
-
-![Language](https://img.shields.io/badge/Language-VHDL-00599C?style=for-the-badge&logo=vhdl)
-![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-E05A47?style=for-the-badge&logo=xilinx)
-![Target](https://img.shields.io/badge/Target-Zynq_UltraScale%2B_ZCU208-D9232E?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-VHDL-blue.svg)
+![Language](https://img.shields.io/badge/Language-VHDL-blue.svg)
+![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-red.svg)
+![Target](https://img.shields.io/badge/Target-Zynq_UltraScale-green)
 ![Frequency](https://img.shields.io/badge/Fmax-500_MHz-2EA44F?style=for-the-badge)
 ![Architecture](https://img.shields.io/badge/Architecture-16--Stage_Pipelined-8A2BE2?style=for-the-badge)
 
